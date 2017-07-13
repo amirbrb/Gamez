@@ -1,0 +1,35 @@
+.app-container {
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+}
+
+.app {
+    border-radius: 15px;
+    border: 1px solid black;
+	width: 150px;
+    height: 150px;
+	position: relative;
+}
+
+.logo{
+	width: 80px;
+    height: 80px;
+    left: 10px;
+    top: 5px;
+    position: absolute;
+}
+
+.shithead > div.logo{
+	content:url("/img/logo.png");
+}
+
+.content{
+	right: 20px;
+    bottom: 20px;
+    position: absolute;
+}
+
+.shithead > div.content:after{
+	content:'shithead';
+}

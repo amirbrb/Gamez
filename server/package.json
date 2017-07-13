@@ -1,0 +1,20 @@
+{
+  "name": "gemers-server",
+  "version": "1.0.0",
+  "description": "gamers application server",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.15.3",
+    "http": "latest",
+    "path": "0.12.7",
+    "ejs": "^1.0.0",
+    "guid": "latest",
+    "body-parser": "1.17.2",
+    "socket.io": "latest",
+    "client-sessions": "latest"
+  },
+  "author": "amirbrb",
+  "license": "MIT"
+}
