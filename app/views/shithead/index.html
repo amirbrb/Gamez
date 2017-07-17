@@ -24,6 +24,7 @@
         :cardsontable="cardsontable"></app>
     </div>
     <script type="text/javascript">
+      var x = 7;
       var socket = io.connect("http://mustb-amirbrb.c9users.io");
       socket.on('Hi', function(data){
           socket.id = socket.id || data.id;
