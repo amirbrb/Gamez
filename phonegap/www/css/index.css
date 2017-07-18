@@ -21,7 +21,7 @@
 }
 
 .shithead > div.logo{
-	content:url("/img/logo.png");
+	content:url("../img/logo.png");
 }
 
 .content{
