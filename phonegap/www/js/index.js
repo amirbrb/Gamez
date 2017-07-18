@@ -3,7 +3,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-        self._base = 'http://mustb-amirbrb.c9users.io/';
+        this._base = 'http://mustb-amirbrb.c9users.io/';
         if (cordova)
             window.open = cordova.InAppBrowser.open;
     },
@@ -19,10 +19,13 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-
+        var apps = document.getElementById('apps');
+        apps.setAttribute('style', 'background:yellow;')
     },
     navigate: function(path) {
-        var url = self._base + path;
+        var apps = document.getElementById('apps');
+        apps.setAttribute('style', 'background:red;')
+        var url = this._base + path;
         var win = window.open(url, '_blank', 'location=no,zoom=no,toolbar=no');
     }
 };
